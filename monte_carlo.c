@@ -11,6 +11,26 @@ float frandom() {
   return ret;
 }
 
+float mc_pi(int n)
+{  
+  float x,y,pie,z;
+  int count=0;
+  for(int i=0;i<n;i++)
+   {
+      x=frandom();
+     
+      y=frandom();
+      
+      z=x*x+y*y;
+    
+      if(z<=1)
+        count++;
+     }
+   pie=(float)count/n*4.0;
+   
+   return pie;
+ }  
+   
 int main(void) {
   float pi0;
   float pi1;
