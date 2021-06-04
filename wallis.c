@@ -36,4 +36,3 @@ float wallis_pi(int n)
    pie=pie*2.0;
    return pie;
 }
-
